@@ -1,0 +1,22 @@
+{
+  "name": "web-design-1819",
+  "version": "1.0.0",
+  "description": "//Werken met en voor echte mensen.",
+  "main": "src/index.js",
+  "scripts": {
+    "npm start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesperingels/web-design-1819.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesperingels/web-design-1819/issues"
+  },
+  "homepage": "https://github.com/jesperingels/web-design-1819",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
