@@ -4,7 +4,7 @@
   "description": "//Werken met en voor echte mensen.",
   "main": "src/index.js",
   "scripts": {
-    "npm start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jesperingels/web-design-1819",
   "dependencies": {
-    "express": "^4.16.4"
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
   }
 }
