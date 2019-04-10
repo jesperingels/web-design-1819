@@ -23,5 +23,9 @@ app.get('/kookboeken', function(req, res) {
     res.render('pages/cook-books.ejs');
 });
 
+app.get('/succes', function(req, res) {
+    res.send('<a href="#"><h1>Test succesvol!</h1></a>');
+});
+
 app.listen(port, () => console.log('App listening on port: ' + port ));
 
