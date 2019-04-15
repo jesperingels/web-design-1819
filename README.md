@@ -28,6 +28,44 @@ wanneer je de <kbd>TAB</kbd> toets gebruikt. Mensen die niet blind zijn zullen h
 
 ### Value Proposition Canvas
 ![VPC](public/img/Value-Proposition-Canvas.png)
+    
+#### User
+* Tasks
+    * Larissa gebruikt het menu om door de website te navigeren
+    * Larissa zoekt naar informatie over specifieke producten/onderwerpen op een detailpagina van de website.
+    
+* Gains
+    * Larissa kan met een 'goede' navigatie informatie vinden op websites.
+    * Larissa weet waar ze is op de website.
+    * Ze kan terug en vooruit op de pagina (navigeren).
+    * Met haar screen-reader weet Larissa wat er op de website te vinden is.
+
+* Pains
+    * Larissa weet vaak niet waar ze is op een website.
+    * Larissa kan websites soms niet gebruiken, omdat de focus op sommige elementen disabled is. 
+    * Sommige ontworpen interacties die vanzelfsprekend zijn voor niet blinde mensen. Zijn voor Larissa onmoglijk om te 
+    gebruiken. Zoals de 'regen-slider' van [buienradar](https://www.buienradar.nl/).
+    
+#### Product
+* Products & Services
+    * Dedicated navigatie pagina
+    * Auditief navigeren
+
+* Gain creators
+    * Larissa kan snel vinden wat ze zoekt.
+    * Effectief zoeken, dus ze kan doelgericht zonder omwegen vinden wat ze zoekt.
+    * Larissa weet snel waar ze is op de website.
+    * Larissa weet sneller welke elementen er op de website zijn en waar ze zich bevinen.
+    
+* Pain killers
+    * Breadcrumbs zorgen ervoor dat ze ten alle tijden weet waar ze is op de website.
+    * De HTML is semantisch, waardoor de screen-reader de website juist interpreteert.             
+    * De interactie op de website werkt intuïtief voor Larissa. 
+
+
+
+
+
 
 
 
