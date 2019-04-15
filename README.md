@@ -10,7 +10,7 @@ Ook kan ze elementen opvragen die op de pagina te vinden zijn. Zoals alle titels
 
 __Hoe__ ontwerp ik een website waardoor Larissa makkelijk, snel, effectief en ook 'pleasurable' kan navigeren.
 
-#### (mogelijke) Oplossingen
+#### (mogelijke) Oplossingen ☑
 * __Auditief navigeren__ Alle elementen op de pagina spelen een geluid af wanneer de muis hier overheen hovert. Dit geluid 
 is kenmerkend voor het element, zodat Larissa herkent welke elementen het zijn. Wanneer ze een **trackpad** gebruikt 
 kan ze tactiel voelen waar de randen van de viewport zijn, doordat de grote van de viewport wordt vertaald naar het trackpad.
@@ -29,7 +29,7 @@ wanneer je de <kbd>TAB</kbd> toets gebruikt. Mensen die niet blind zijn zullen h
 ### Value Proposition Canvas
 ![VPC](public/img/Value-Proposition-Canvas.png)
     
-#### User
+#### User 👩🏻‍🦰
 * Tasks
     * Larissa gebruikt het menu om door de website te navigeren
     * Larissa zoekt naar informatie over specifieke producten/onderwerpen op een detailpagina van de website.
@@ -46,7 +46,7 @@ wanneer je de <kbd>TAB</kbd> toets gebruikt. Mensen die niet blind zijn zullen h
     * Sommige ontworpen interacties die vanzelfsprekend zijn voor niet blinde mensen. Zijn voor Larissa onmoglijk om te 
     gebruiken. Zoals de 'regen-slider' van [buienradar](https://www.buienradar.nl/).
     
-#### Product
+#### Product 🎁
 * Products & Services
     * Dedicated navigatie pagina
     * Auditief navigeren
