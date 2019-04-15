@@ -1,5 +1,4 @@
 # Web Design @cmda-minor-web 1819
-# Web Design @cmda-minor-web 1819
 ## Onderzoek 🔍
 ### User Scenario
 #### Wie? 👩
@@ -9,4 +8,4 @@ Larissa wil op een website snel en effectief kunnen navigeren. Op dit moment doe
 en een brailleregel. Door bepaalde sneltoetsen te gebruiken kan ze bijvoorbeeld: snel door alle linkjes op de pagina tabben.
 Ook kan ze elementen opvragen die op de pagina te vinden zijn. Zoals alle titels of alle alt-teksten.
 
-Hoe ontwerp ik een website waardoor Larissa makkelijk, snel, effectief en ook 'pleasurable' kan navigeren.
+__Hoe__ ontwerp ik een website waardoor Larissa makkelijk, snel, effectief en ook 'pleasurable' kan navigeren.
