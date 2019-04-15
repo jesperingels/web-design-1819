@@ -24,6 +24,10 @@ is het handig als er een pagina is waar je met tab als een soort boomstructuur d
 extra laag bovenop de huidige website. Deze is alleen toegankelijk via een 'skip-link'. Deze link kun je alleen bezoeken 
 wanneer je de <kbd>TAB</kbd> toets gebruikt. Mensen die niet blind zijn zullen hier dus niks van merken.
 
-
 ![Ideeën](public/img/ideeën%20.jpeg)
+
+### Value Proposition Canvas
+![VPC](public/img/Value-Proposition-Canvas.png)
+
+
 
