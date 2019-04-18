@@ -1,4 +1,4 @@
-const menuItems = document.querySelectorAll('a');
+const links = document.querySelectorAll('a');
 const audioBlop = document.getElementById('blop');
 const constantBleep = document.getElementById('constant');
 const headerBg = document.querySelector('.swiper-wrapper');
@@ -11,14 +11,24 @@ let mousePos ={
     y:0
 };
 
-menuItems.forEach((item) => {
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+
+
+links.forEach((item) => {
     item.addEventListener('mouseenter', ()=>{
         audioBlop.play();
         constantBleep.pause();
     })
 });
 
-const getID = (ID) => {
+const getInnerText = (ID) => {
     let ariaLive = document.getElementById('live');
     let linkName = document.getElementById(ID).getAttribute('datatype');
 
@@ -31,14 +41,6 @@ const getID = (ID) => {
 
 };
 
-function addEvent(obj, evt, fn) {
-    if (obj.addEventListener) {
-        obj.addEventListener(evt, fn, false);
-    }
-    else if (obj.attachEvent) {
-        obj.attachEvent("on" + evt, fn);
-    }
-}
 
 addEvent(document, "mouseout", function() {
     constantBleep.play();
@@ -49,23 +51,19 @@ addEvent(document, "mouseover", function() {
 });
 
 
-document.addEventListener('mousemove', (e)=>{
-    const pos = {
-        x:e.clientX,
-        y:e.clientY
-    };
+// document.addEventListener('mousemove', (e)=>{
+//     const pos = {
+//         x:e.clientX,
+//         y:e.clientY
+//     };
+//
+//
+//
+//     mousePos = {x:pos.x,y:pos.y};
+//
+//
+// });
 
-    // pos.x >= mousePos.x ? console.log("right") : console.log("left");
-    // pos.y >= mousePos.y ? console.log("down") : console.log("up");
-    // document.querySelector('#mouseHelper').setAttribute('style',`transform:translate(${pos.x}px,0)`)
-
-
-    mousePos = {x:pos.x,y:pos.y};
-
-    // console.log(`dit is x ${pos.x}`);
-    // console.log(`dit is y ${pos.y}`);
-
-});
 
 images.forEach((image)=>{
     image.addEventListener('mouseover', () => {

@@ -22,6 +22,7 @@ ul {
 
 #live {
     width: 300px;
+    width:fit-content;
     background-color: white;
     position: fixed;
     bottom: 0;
