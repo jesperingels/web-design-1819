@@ -11,13 +11,25 @@ let mousePos ={
     y:0
 };
 
-menuItems.forEach((item)=>{
+menuItems.forEach((item) => {
     item.addEventListener('mouseenter', ()=>{
         audioBlop.play();
         constantBleep.pause();
     })
 });
 
+const getID = (ID) => {
+    let ariaLive = document.getElementById('live');
+    let linkName = document.getElementById(ID).getAttribute('datatype');
+
+    document.addEventListener('keydown', (e) => {
+        if(e.altKey) {
+            ariaLive.innerText = '';
+            ariaLive.innerText = linkName;
+        }
+    });
+
+};
 
 function addEvent(obj, evt, fn) {
     if (obj.addEventListener) {
@@ -71,13 +83,11 @@ headerBg.addEventListener('mouseout', ()=>{
 });
 
 headerBg.addEventListener('mouseover', ()=>{
+    synth.volume = 0.1;
     synth.play();
 });
 
 
-document.addEventListener('keydown', (e)=>{
-    console.log(e.key);
-});
 
 
 

@@ -21,8 +21,7 @@ ul {
 }
 
 #live {
-    width: 100%;
-    min-height: 100px;
+    width: 300px;
     background-color: white;
     position: fixed;
     bottom: 0;
