@@ -4,21 +4,84 @@ body {
     display: grid;
     grid-template-columns: auto 500px 500px auto;
     grid-template-rows: auto auto auto auto auto;
-    /*cursor: none;*/
 }
-/*#mouseHelper{*/
-/*    height: 100vh;*/
-/*    width: 1px;*/
-/*    pointer-events: none;*/
-/*    border-left: 1px solid red;*/
-/*    z-index: 99999999999999;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*}*/
 
 ul {
     list-style: none;
 }
+
+#zone-left {
+    left: 0;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+#zone-right {
+    right: 0;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+#zone-bottom {
+    bottom: 0;
+    height: 12px;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999999;
+}
+
+#zone-top {
+    top: 0;
+    height: 12px;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999999;
+}
+
+#zone-left-off {
+    left: 3px;
+    width: 1%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+#zone-right-off {
+    right: 3px;
+    width: 1%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+#zone-top-off {
+    top: 12px;
+    height: 2%;
+    right: 0;
+    left: 0;
+    width: 100vw;
+}
+
+#zone-bottom-off {
+    bottom: 12px;
+    height: 2%;
+    right: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.zone {
+    position: fixed;
+    border: 1px solid black;
+    z-index: 9999999;
+}
+
 
 #live {
     width: 300px;

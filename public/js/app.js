@@ -4,6 +4,14 @@ const constantBleep = document.getElementById('constant');
 const headerBg = document.querySelector('.swiper-wrapper');
 const images = document.querySelectorAll('img');
 const synth = document.getElementById('synth');
+const zoneLeft = document.getElementById('zone-left');
+const zoneLeftOff = document.getElementById('zone-left-off');
+const zoneRight = document.getElementById('zone-right');
+const zoneRightOff = document.getElementById('zone-right-off');
+const zoneTop = document.getElementById('zone-top');
+const zoneTopOff = document.getElementById('zone-top-off');
+const zoneBottom = document.getElementById('zone-bottom');
+const zoneBottomOff = document.getElementById('zone-bottom-off');
 
 
 let mousePos ={
@@ -42,32 +50,19 @@ const getInnerText = (ID) => {
 };
 
 
-addEvent(document, "mouseout", function() {
-    constantBleep.play();
-});
 
-addEvent(document, "mouseover", function() {
-    constantBleep.pause();
-});
-
-
-// document.addEventListener('mousemove', (e)=>{
-//     const pos = {
-//         x:e.clientX,
-//         y:e.clientY
-//     };
+// addEvent(document, "mouseout", function() {
+//     constantBleep.play();
+// });
 //
-//
-//
-//     mousePos = {x:pos.x,y:pos.y};
-//
-//
+// addEvent(document, "mouseover", function() {
+//     constantBleep.pause();
 // });
 
 
 images.forEach((image)=>{
     image.addEventListener('mouseover', () => {
-        synth.volume = 0.1;
+        synth.volume = 0.5;
         synth.play();
     });
 
@@ -81,11 +76,50 @@ headerBg.addEventListener('mouseout', ()=>{
 });
 
 headerBg.addEventListener('mouseover', ()=>{
-    synth.volume = 0.1;
+    synth.volume = 0.5;
     synth.play();
 });
 
 
+
+
+zoneLeft.addEventListener('mouseover', function () {
+    constantBleep.play();
+    console.log('mouse = left')
+});
+
+zoneLeftOff.addEventListener('mouseover', function () {
+    constantBleep.pause();
+});
+
+zoneRight.addEventListener('mouseover', function () {
+    constantBleep.play();
+    console.log('mouse = right')
+
+});
+
+zoneRightOff.addEventListener('mouseover', function () {
+    constantBleep.pause();
+});
+
+zoneTop.addEventListener('mouseover', function () {
+    constantBleep.play();
+    console.log('mouse = top')
+});
+
+zoneTopOff.addEventListener('mouseover', function () {
+    constantBleep.pause();
+});
+
+
+zoneBottom.addEventListener('mouseover', function () {
+    constantBleep.play();
+    console.log('mouse = bottom')
+});
+
+zoneBottomOff.addEventListener('mouseover', function () {
+    constantBleep.pause();
+});
 
 
 
