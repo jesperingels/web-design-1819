@@ -92,6 +92,10 @@ ul {
     z-index: 99999;
     border: 1px solid black;}
 
+.stnd.dark-version {
+    padding: 25px;
+}
+
 h2 {
     font-size: 48px!important;
     line-height: 48px!important;

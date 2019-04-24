@@ -12,12 +12,11 @@ const zoneTop = document.getElementById('zone-top');
 const zoneTopOff = document.getElementById('zone-top-off');
 const zoneBottom = document.getElementById('zone-bottom');
 const zoneBottomOff = document.getElementById('zone-bottom-off');
-
-
-let mousePos ={
-    x:0,
-    y:0
-};
+const paragraph = document.querySelectorAll('p');
+const morse = document.getElementById('morse');
+const subTitles = document.querySelectorAll('.nectar-dropcap');
+const title = document.querySelector('h2');
+const knock = document.getElementById('knock');
 
 function addEvent(obj, evt, fn) {
     if (obj.addEventListener) {
@@ -121,7 +120,36 @@ zoneBottomOff.addEventListener('mouseover', function () {
     constantBleep.pause();
 });
 
+paragraph.forEach((par) => {
+    par.addEventListener('mouseover', () => {
+        morse.play();
+        console.log('this is a paragraph')
+    });
 
+    par.addEventListener('mouseout', () => {
+        morse.pause();
+    })
+});
+
+subTitles.forEach((title) => {
+    title.addEventListener('mouseover', () => {
+        knock.play();
+        console.log('this is a title')
+    });
+
+    title.addEventListener('mouseout', () => {
+        knock.stop();
+        console.log('out of subtitle')
+    });
+});
+
+title.addEventListener('mouseover', () => {
+    knock.play();
+});
+
+title.addEventListener('mouseout', () => {
+    knock.pause();
+});
 
 
 
