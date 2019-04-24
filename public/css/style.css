@@ -10,6 +10,31 @@ ul {
     list-style: none;
 }
 
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    width: 30%;
+    left:-9999px;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
 #zone-left {
     left: 0;
     width: 3px;
@@ -157,6 +182,7 @@ body > div:nth-child(7) .placeholder {
 .swiper-slide .container {
     margin-bottom: 130px;
     padding-left: 25px;
+    z-index: 999999;
 }
 
 .nectar-slider-wrap,

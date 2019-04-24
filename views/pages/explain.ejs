@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Uitleg - Audio tour</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<a href="/">Link terug naar de website</a>
+
+<a href="#">Elk van de volgende geluiden bevat een link die nergens naartoe linkt. Wel geeft de link uitleg over het eerstvolgende
+audiofragment. Door de tab toets te gebruiken kun je door deze uitleg navigeren.</a>
+
+<a href="#">Het volgende geluid speelt zich af wanneer je over een link hovert.</a>
+<button onclick="document.getElementById('blop').play();">Speel audio</button>
+<button onclick="document.getElementById('blop').pause();">Pauzeer audio</button>
+
+<a href="#">Het volgende geluid speelt zich af wanneer de muis, tegen of over de rand van de website gaat.</a>
+<button onclick="document.getElementById('constant').play();">Speel audio</button>
+<button onclick="document.getElementById('constant').pause();">Pauzeer audio</button>
+
+<a href="#">Het volgende geluid speelt zich af wanneer je over een afbeelding hovert.</a>
+<button onclick="document.getElementById('synth').play();">Speel audio</button>
+<button onclick="document.getElementById('synth').pause();">Pauzeer audio</button>
+
+<a href="#">Het volgende geluid speelt zich af wanneer je over een tekst hovert. Tussen twee haakjes, een paragraaf element).</a>
+<button onclick="document.getElementById('morse').play();">Speel audio</button>
+<button onclick="document.getElementById('morse').pause();">Pauzeer audio</button>
+
+<a href="#">Het volgende geluid speelt zich af wanneer je over een titel hovert.</a>
+<button onclick="document.getElementById('knock').play();">Speel audio</button>
+<button onclick="document.getElementById('knock').pause();">Pauzeer audio</button>
+
+<a href="/">Link terug naar de website</a>
+
+
+
+
+
+<audio id="blop">
+    <source src="audio/blop.wav">
+</audio>
+
+<audio id="error">
+    <source src="audio/error.mp3">
+</audio>
+
+<audio id="constant">
+    <source src="audio/constant-bleep.wav">
+</audio>
+
+<audio id="synth" >
+    <source src="audio/synth.wav">
+</audio>
+
+<audio id="morse" >
+    <source src="audio/morse.wav">
+</audio>
+
+<audio id="knock" >
+    <source src="audio/knock.mp3">
+</audio>
+
+<div id="live" aria-live="assertive" aria-atomic="true"></div>
+
+
+<script src="js/app.js"></script>
+
+</body></html>

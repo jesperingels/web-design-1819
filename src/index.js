@@ -11,6 +11,10 @@ app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
+app.get('/uitleg', function (req, res) {
+   res.render('pages/explain.ejs');
+});
+
 
 app.listen(port, () => console.log('App listening on port: ' + port ));
 
