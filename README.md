@@ -112,7 +112,16 @@ De verbeter punten waren:
 * Het error geluid wanneer de muis uit de 'window' gaat speelt alleen af wanneer de muis echt compleet buiten het window is..
 Dus moest de browser geresized worden om het te laten werken. Het zou beter zijn als dit geluid wordt afgespeeld als de muis 
 de rand van de website raakt. 
-* 
+* Er mogen meer geluiden worden toegevoegd, sommige geluiden mogen ook harder worden afgespeeld. 
+* Het zou handig zijn als ze haar screenreader kan laten vertellen wat er in het element staat waar ze overheen hovert. 
+
+#### Week 3
+Alle verbeterpunten heb ik in de laatste itteratieslag verwerkt. 
+* Wanneer de muis de rand van de website raakt speelt het error geluid zich af. 
+* Er zijn meer geluiden toegevoegd, zodat elk elementen wat betekenisvol is een uniek kenmerkend geluid maakt. 
+* Door gebruik te maken van een ARIA Live Region leest haar screenreader voor wat er in het element staat waar ze overheen
+hovert.
+
 
 
 
